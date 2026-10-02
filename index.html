@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIODATA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>BIODATA</h1>
+
+        <form id="biodataForm">
+
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="jurusan">Jurusan:</label>
+
+                <select id="jurusan" required>
+                    <option value="RPL">RPL</option>
+                    <option value="TKR">TKR</option>
+                    <option value="TKJ">TKJ</option>
+                    <option value="AKL">AKL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+
+                <div class="radio-group">
+
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Laki-laki"
+                            checked
+                        >
+                        Laki-laki
+                    </label>
+
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Perempuan"
+                        >
+                        Perempuan
+                    </label>
+
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Boti"
+                        >
+                        Boti
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tinggi">Tinggi Badan (cm):</label>
+                <input
+                    type="number"
+                    id="tinggi"
+                    min="1"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="berat">Berat Badan (kg):</label>
+                <input
+                    type="number"
+                    id="berat"
+                    min="1"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="hobi">Hobi:</label>
+                <input
+                    type="text"
+                    id="hobi"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="nohp">No. HP:</label>
+                <input
+                    type="tel"
+                    id="nohp"
+                    maxlength="13"
+                    inputmode="numeric"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Simpan
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
