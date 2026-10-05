@@ -1,0 +1,19 @@
+.status{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgb(95, 4, 4); border: 3.5px solid;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    background-color: #2196F3;
+    color:white;
+    font-weight: bold
+}

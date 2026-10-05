@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabel.css">
     <title>Document</title>
     <style>
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 3px solid black;
-        }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-        .table th, .table td {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-            color: #000;
-            font-weight: bold;
-        }
+td, th {
+  border: 2px solid rgb(7, 7, 7);
+  text-align: left;
+  padding: 8px;
+}
 
-        .table th {
-            background-color: rgb(47, 47, 231);
-        }
-    </style>
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
-    <table class="table">
-        <tr>
-            <th>Nama</th>
-            <th>jurusan</th>
-        </tr>
-
-        <tr>
-            <td>Muhammad Aiko Anail adi</td>
-            <td>Rekayasa Perangkat lunak</td>
-        </tr>
-
-        <tr>
-            <td>Muhammad Alif Anail adi</td>
-            <td>Rekayasa Perangkat lunak</td>
-        </tr>
-    </table>
+    <div style="text-align: center;" style="font-size: large;" >
+    <H2><strong> Biodata siswa</strong>
+    </div>
+    <table>
+  <tr>
+    <th>field/atribut</th>
+    <th> keterangan hasil input</th>
+  </tr>
+  <tr>
+    <td> NAMA:</td>
+    <td>Muhammad Aiko Anail Adi</td>
+  </tr>
+  <tr>
+    <td>Alamat:</td>
+    <td>JL.Juanda Desa Plandi Kec.Wonosari Kab.Malang</td>
+  </tr>
+  <tr>
+    <td>Jurusan:</td>
+    <td>RPL (rekayasa perangkat lunak)</td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td> Laki-Laki</td>
+  </tr>
+  <tr>
+    <td>Tinggi Badan (cm)</td>
+    <td>170 cm</td>
+  </tr>
+  <tr>
+    <td>Berat Badan(Kg)</td>
+    <td>57 KG</td>
+  </tr>
+  <tr>
+    <Td>Hobi:</Td>
+    <td>Lari🏃</td>
+  </tr>
+  <tr>
+    <td>NO.HP</td>
+    <td>085717222930</td>
+  </tr>
+    <tr>
+        <td colspan="2" class="status" style="text-align: center;">
+            Status: Data berhasil divalidasi dan direkap ke dalam tabel
+        </td>
+     </tr>
+   
+</table>
 </body>
 </html>
