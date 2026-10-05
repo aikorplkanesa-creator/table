@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +8,117 @@
     <title>Test Halaman Index</title>
 
     <link rel="stylesheet" href="style-1.css">
-    <meta name="google-site-verification" content="n8byv6odcmOdSz5o6M-YTukLOBEGzSfnzFryYTLnIZQ" />
 </head>
 
 <body>
 
+    <div class="video-background">
 
-    <div class="top-menu">
-        <span class="menu-text">Pilih menu di bawah</span>
-        <span class="time">04:41</span>
-    </div>
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            id="bg-video"
+        >
+            <source src="video.mp4" type="video/mp4">
+        </video>
 
-
-    <h1>TEST HALAMAN INDEX</h1>
-
-
-    <div class="profile-photo">
-        <img src="aiko.png" alt="Foto Profil">
-    </div>
-
-
-    <div class="menu-container">
-
-        <a href="index-biodata.html" class="menu-item">
-            <span class="icon">📊</span>
-            <span>Form Biodata</span>
-        </a>
-
-        <a href="index-hasil.html" class="menu-item">
-            <span class="icon">📋</span>
-            <span>Hasil Biodata</span>
-        </a>
-
-        <a href="index-table.html" class="menu-item">
-            <span class="icon">🔎</span>
-            <span>Tabel</span>
-        </a>
-
-        <a href="https://tugasportofolio-ubig.vercel.app/" class="menu-item">
-            <span class="icon">🌐</span>
-            <span>Ke Web</span>
-        </a>
+        <div class="overlay"></div>
 
     </div>
+
+
+    <main class="main-card">
+
+        <div class="top-menu">
+
+            <span class="menu-text">
+                Pilih menu di bawah
+            </span>
+
+            <div class="top-right">
+
+                <span class="time">
+                    04:41
+                </span>
+
+                <button
+                    id="themeToggle"
+                    class="theme-toggle"
+                    type="button"
+                >
+                    🌙
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-card">
+
+            <div class="profile-photo">
+
+                <img
+                    src="aiko.png"
+                    alt="Foto Profil"
+                >
+
+            </div>
+
+
+            <h1>
+                TEST HALAMAN INDEX
+            </h1>
+
+
+            <div class="menu-container">
+
+                <a
+                    href="index-biodata.html"
+                    class="menu-item"
+                >
+                    <span class="icon">📊</span>
+                    <span>Form Biodata</span>
+                </a>
+
+
+                <a
+                    href="index-hasil.html"
+                    class="menu-item"
+                >
+                    <span class="icon">📋</span>
+                    <span>Hasil Biodata</span>
+                </a>
+
+
+                <a
+                    href="index-table.html"
+                    class="menu-item"
+                >
+                    <span class="icon">🔎</span>
+                    <span>Tabel</span>
+                </a>
+
+
+                <a
+                    href="https://tugasportofolio-ubig.vercel.app/"
+                    class="menu-item"
+                >
+                    <span class="icon">🌐</span>
+                    <span>Ke Web</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script-1.js"></script>
 
 </body>
+
 </html>
