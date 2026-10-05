@@ -1,148 +1,75 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Tabel Siswa</title>
+    <link rel="stylesheet" href="tabel.css">
+    <title>Document</title>
     <style>
-        body { font-family: Arial, sans-serif; 
-          padding: 20px; 
-          background-color: #f4f4f9;
-         }
-        .kotak-tabel { 
-          background: white;
-           padding: 20px; 
-           border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-             max-width: 600px;
-              margin: auto; 
-            }
-        table {
-           width: 100%; 
-           border-collapse: collapse;
-            margin-top: 15px; 
-          }
-        th, td { 
-          border: 1px solid #ccc; 
-          padding: 10px; 
-          text-align: left; 
-        }
-        th { background-color: #007BFF; 
-          color: white; 
-        }
-        
-    </style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid rgb(7, 7, 7);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
-
-    <div class="kotak-tabel">
-        <h2>Daftar Siswa PPLG</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama Lengkap</th>
-                    <th>Jurusan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Bagus Java</td>
-                    <td>Rekayasa Perangkat Lunak</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Bunga Cantik Sekali</td>
-                    <td>Kecantikan</td>
-                </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Evelina</td>
-                    <td>Mancing Emosi</td>
-                </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Septines</td>
-                    <td>Kicau Mania</td>
-                </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Thoriq</td>
-                    <td>Mancing Emosi</td>
-            </tbody>
-        </table>
+    <div style="text-align: center;" style="font-size: large;" >
+    <H2><strong> Biodata siswa</strong>
     </div>
-    <hr>
-    <table class="tabel-utama">
-              <thead>
-            <tr>
-
-                <th rowspan="2">No</th>
-                <th rowspan="2">Nama Tim</th>
-                
-
-                <th colspan="2">Nilai Praktikum Web</th>
-                
-                <th rowspan="2">Status</th>
-            </tr>
-            <tr>
-
-                <th>Desain (HTML/CSS)</th>
-                <th>Logika (JavaScript)</th>
-            </tr>
-        </thead>
-        
-
-        <tbody>
-
-            <tr>
-                <td>1</td>
-                <td>Tim Alpha</td>
-                <td>85</td>
-                <td>90</td>
-                <td>Lulus</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>Tim Beta</td>
-                
-
-                <td colspan="2" style="padding: 0;">
-                    <table class="tabel-dalam">
-                        <tr>
-                            <td>Desain: 80</td>
-                            <td>JS: Error</td>
-                        </tr>
-                        <tr>
-
-                            <td colspan="2" style="color: red; font-weight: bold;">Catatan: Harus Remedial JavaScript!</td>
-                        </tr>
-                    </table>
-                </td>
-                
-                <td>Revisi</td>
-            </tr>
-
-
-            <tr>
-                <td>3</td>
-
-                <td rowspan="2" style="background-color: #f9f9f9;">Tim Gamma</td>
-                <td>Anggota 1: 95</td>
-                <td>Anggota 1: 88</td>
-                <td>Lulus</td>
-            </tr>
-            <tr>
-                <td>4</td>
-
-                <td>Anggota 2: 70</td>
-                <td>Anggota 2: 75</td>
-                <td>Lulus Bersyarat</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <table>
+  <tr>
+    <th>field/atribut</th>
+    <th> keterangan hasil input</th>
+  </tr>
+  <tr>
+    <td> NAMA:</td>
+    <td>Muhammad Aiko Anail Adi</td>
+  </tr>
+  <tr>
+    <td>Alamat:</td>
+    <td>JL.Juanda Desa Plandi Kec.Wonosari Kab.Malang</td>
+  </tr>
+  <tr>
+    <td>Jurusan:</td>
+    <td>RPL (rekayasa perangkat lunak)</td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td> Laki-Laki</td>
+  </tr>
+  <tr>
+    <td>Tinggi Badan (cm)</td>
+    <td>170 cm</td>
+  </tr>
+  <tr>
+    <td>Berat Badan(Kg)</td>
+    <td>57 KG</td>
+  </tr>
+  <tr>
+    <Td>Hobi:</Td>
+    <td>Lari🏃</td>
+  </tr>
+  <tr>
+    <td>NO.HP</td>
+    <td>085717222930</td>
+  </tr>
+    <tr>
+        <td colspan="2" class="status" style="text-align: center;">
+            Status: Data berhasil divalidasi dan direkap ke dalam tabel
+        </td>
+     </tr>
+   
+</table>
 </body>
 </html>
