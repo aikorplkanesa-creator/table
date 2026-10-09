@@ -319,3 +319,65 @@ body.light-mode .overlay {
     }
 }
 
+.music-toggle {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+
+    border: 1px solid rgba(255, 118, 84, 0.6);
+    border-radius: 50px;
+
+    background: rgba(35, 24, 20, 0.9);
+    color: #fff4ed;
+
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.music-toggle:hover {
+    background: #ff7654;
+    color: #21130e;
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 30px rgba(255, 118, 84, 0.25);
+}
+
+.music-toggle.is-playing {
+    border-color: #ff7654;
+    color: #ff997e;
+}
+
+.music-toggle:focus-visible {
+    outline: 2px solid #ff7654;
+    outline-offset: 4px;
+}
+
+@media (max-width: 560px) {
+    .music-toggle {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 16px;
+        font-size: 10px;
+    }
+}
+

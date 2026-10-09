@@ -227,7 +227,7 @@ button:hover {
 
     margin-top: 10px;
 
-    color: #551a8b;
+    color: black;
 
     font-size: 17px;
 }
@@ -259,4 +259,34 @@ button:hover {
     .radio-label {
         font-size: 16px;
     }
+}
+
+.form{
+    color: rgb(18, 1, 1);
+    text-align: center;
+    background-color: black;
+    width: 135px;
+    height: 20px;
+    display: block;
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 29px;
+    background: transparent;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.form-2{
+    color: rgb(18, 1, 1);
+    text-align: center;
+    background-color: black;
+    width: 135px;
+    height: 20px;
+    display: block;
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 29px;
+    background: transparent;
+    border: 2px solid black;
+    text-decoration: none;
 }
