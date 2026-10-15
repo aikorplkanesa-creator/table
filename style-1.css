@@ -122,8 +122,8 @@ body {
     border-radius: 50%;
     border: 3px solid #ffffff;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    display: block;
 }
+
 
 .content-card h1 {
     text-align: center;
@@ -285,6 +285,7 @@ body.light-mode .overlay {
 
     .content-card {
         padding: 24px 18px 25px;
+
     }
 
     .profile-photo {
